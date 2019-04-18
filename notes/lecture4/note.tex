@@ -1,0 +1,152 @@
+\documentclass[UTF8]{ctexart}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\title{leture4}
+\author{万俊鹏}
+\date{\today}
+
+\begin{document}
+\tableofcontents
+\maketitle
+\section{Updating concatenated word vectors}
+\begin{enumerate}
+\item  \^{y} :softmax probility output vector
+\item  t: target probality distributation
+\item $ f = f(x) = Wx\in \mathbb{R}^C $ and $f_c = c^'$  the element of the vector
+\end{enumerate}
+
+
+\begin{enumerate}
+\item tip1: Careful define variables  and track dimensionality
+\item tip2: Chain rule
+\end{enumerate}
+
+\section{Demystifying neural networks}
+\[  h_w,b (x) = f(w^Tx +b) \]
+\[ f(z) = \frac{1}{1+e^{-z}}\]
+
+\paragraph{A neural network = running several logistic regressions at the same time}
+
+
+Einstein 's $E=mc^2$.
+
+\[ E=mc^2. \]
+
+\begin{equation}
+E=mc^2.
+\end{equation}
+\[ z = r\cdot e^{2\pi i}. \]
+
+\section{数学符号}
+\subsection{sqrt and frac}
+$\sqrt{x}$, $\frac{1}{2}$.
+
+\[ \sqrt{x}, \]
+
+\[ \frac{1}{2}. \]
+\subsection{内置符号}
+\[ \pm\; \times \; \div\; \cdot\; \cap\; \cup\;
+\geq\; \leq\; \neq\; \approx \; \equiv \;\sum;\prod; \lim;\int \]
+
+$ \sum_{i=1}^n i\quad \prod_{i=1}^n $
+$ \sum\limits _{i=1}^n i\quad \prod\limits _{i=1}^n $
+\[ \lim_{x\to0}x^2 \quad \int_a^b x^2 dx \]
+\[ \lim\nolimits _{x\to0}x^2\quad \int\nolimits_a^b x^2 dx \]
+\[ \iint\quad \iiint\quad \iiiint\quad \idotsint \]
+
+\subsection{括号}
+\[ \Biggl(\biggl(\Bigl(\bigl((x)\bigr)\Bigr)\biggr)\Biggr) \]
+\[ \Biggl[\biggl[\Bigl[\bigl[[x]\bigr]\Bigr]\biggr]\Biggr] \]
+\[ \Biggl \{\biggl \{\Bigl \{\bigl \{\{x\}\bigr \}\Bigr \}\biggr \}\Biggr\} \]
+\[ \Biggl\langle\biggl\langle\Bigl\langle\bigl\langle\langle x
+\rangle\bigr\rangle\Bigr\rangle\biggr\rangle\Biggr\rangle \]
+\[ \Biggl\lvert\biggl\lvert\Bigl\lvert\bigl\lvert\lvert x
+\rvert\bigr\rvert\Bigr\rvert\biggr\rvert\Biggr\rvert \]
+\[ \Biggl\lVert\biggl\lVert\Bigl\lVert\bigl\lVert\lVert x
+\rVert\bigr\rVert\Bigr\rVert\biggr\rVert\Biggr\rVert \]
+
+\subsection{省略号}
+ \[ x_1,x_2,\dots ,x_n\quad 1,2,\cdots ,n\quad
+\vdots\quad \ddots \]
+
+\subsection{矩阵}
+\[ \begin{pmatrix} a&b\\c&d \end{pmatrix} \quad
+\begin{bmatrix} a&b\\c&d \end{bmatrix} \quad
+\begin{Bmatrix} a&b\\c&d \end{Bmatrix} \quad
+\begin{vmatrix} a&b\\c&d \end{vmatrix} \quad
+\begin{Vmatrix} a&b\\c&d \end{Vmatrix} \]
+Marry has a little matrix $ ( \begin{smallmatrix} a&b\\c&d \end{smallmatrix} ) $.
+
+\subsection{多行}
+\begin{multline}
+x = a+b+c+{} \\
+d+e+f+g
+\end{multline}
+\[\begin{aligned}
+x ={}& a+b+c+{} \\
+&d+e+f+g
+\end{aligned}\]
+
+\subsection{公式组}
+\begin{gather}
+a = b+c+d \\
+x = y+z
+\end{gather}
+\begin{align}
+a &= b+c+d \\
+x &= y+z
+\end{align}
+\subsection{分段函数}
+\[ y= \begin{cases}
+-x,\quad x\leq 0 \\
+x,\quad x>0
+\end{cases} \]
+
+\section{图片和表格}
+\subsection{图片}
+\includegraphics[width = .8\textwidth]{overall_rnn_pr.jpg}
+
+\subsection{表格}
+\begin{tabular}{|l|c|r|}
+ \hline
+操作系统& 发行版& 编辑器\\
+ \hline
+Windows & MikTeX & TexMakerX \\
+ \hline
+Unix/Linux & teTeX & Kile \\
+ \hline
+Mac OS & MacTeX & TeXShop \\
+ \hline
+通用& TeX Live & TeXworks \\
+ \hline
+\end{tabular}
+
+\subsection{浮动体}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width = .8\textwidth]{overall_rnn_pr.jpg}
+\caption{有图有真相}
+\label{fig:myphoto}
+\end{figure}
+
+\section{版面设置}
+\subsection{页边距}
+\paragraph{在导言区设置的} 哈哈哈
+
+\subsection{页眉页脚}
+
+
+%\geometry{papersize={20cm,15cm}}
+%\geometry{left=1cm,right=2cm,top=3cm,bottom=4cm}
+\subsection{首行缩进}
+\subsection{行间距}
+\subsection{段间距}
+
+
+
+
+
+\end{document}
+
